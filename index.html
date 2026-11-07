@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>LetsZu | Loose Leaf Tea, Matcha &amp; Spiced Chai</title>
+    <meta
+      name="description"
+      content="Loose leaf green, black and herbal teas, matcha and spiced chai from LetsZu, picked at the source and packed in small batches."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23163D2B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%23C5A66A'%3EL%3C/text%3E%3C/svg%3E"
+    />
+    <meta property="og:site_name" content="LetsZu" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="LetsZu | Loose Leaf Tea, Matcha &amp; Spiced Chai"
+    />
+    <meta
+      property="og:description"
+      content="Loose leaf green, black and herbal teas, matcha and spiced chai from LetsZu, picked at the source and packed in small batches."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=1200&h=630"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="LetsZu | Loose Leaf Tea, Matcha &amp; Spiced Chai"
+    />
+    <meta
+      name="twitter:description"
+      content="Loose leaf green, black and herbal teas, matcha and spiced chai from LetsZu, picked at the source and packed in small batches."
+    />
+    <meta name="theme-color" content="#163D2B" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=800 800w, https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=1400 1400w, https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=2000 2000w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+  </head>
+  <body data-root="" data-page="home">
+    <div id="site-header">
+      <noscript
+        ><nav class="noscript-nav" aria-label="Main">
+          <a href="index.html">LetsZu</a><a href="pages/shop.html">Shop</a
+          ><a href="pages/categories.html">Collections</a
+          ><a href="pages/tea-finder.html">Tea Finder</a
+          ><a href="pages/brewing-guide.html">Brewing Guide</a
+          ><a href="pages/our-story.html">Our Story</a
+          ><a href="pages/contact.html">Contact</a>
+        </nav></noscript
+      >
+    </div>
+    <main id="main">
+      <section class="hero" aria-labelledby="heroTitle">
+        <!-- Hero photo is written here (not in JS) so the browser can load it first. Credit: see docs/image-credits.md -->
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=1400"
+            srcset="
+              https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=800   800w,
+              https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=1400 1400w,
+              https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=75&w=2000 2000w
+            "
+            sizes="100vw"
+            width="1600"
+            height="1000"
+            fetchpriority="high"
+            decoding="async"
+            alt="A steaming cup of tea on a table"
+            onerror="this.style.display = 'none'"
+          />
+        </div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow hero-in" style="--i: 0"
+              ><i class="rule" aria-hidden="true"></i>Loose leaf tea &amp;
+              chai</span
+            >
+            <h1 id="heroTitle">
+              <span class="line"><span style="--i: 1">Find your</span></span
+              ><span class="line"><span style="--i: 2">perfect cup</span></span>
+            </h1>
+            <p class="hero-lead hero-in" style="--i: 3">
+              Loose leaf teas and spiced chai, picked at the source and packed
+              in small batches.
+            </p>
+            <div class="hero-actions hero-in" style="--i: 4">
+              <a class="btn btn-ivory btn-lg" href="pages/shop.html">Shop tea</a
+              ><a class="link-arrow" href="pages/categories.html"
+                >Explore collections <i data-lucide="arrow-right" width="18"></i
+              ></a>
+            </div>
+          </div>
+          <a
+            class="hero-cue hero-in"
+            style="--i: 6"
+            href="#featTitle"
+            aria-label="Scroll to signature teas"
+            ><span>Discover</span><i data-lucide="arrow-down" width="18"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="trust" aria-label="Our promises">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-6 col-lg-3">
+              <i data-lucide="truck"></i>
+              <div><b>Free shipping</b><span>On orders over $40</span></div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <i data-lucide="leaf"></i>
+              <div><b>Small batches</b><span>Sealed tins</span></div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <i data-lucide="shield-check"></i>
+              <div><b>30-day returns</b><span>On unopened tins</span></div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <i data-lucide="coffee"></i>
+              <div><b>Loose leaf only</b><span>No dust, no fannings</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="featTitle">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Signature teas</span>
+              <h2 id="featTitle">Where to begin</h2>
+            </div>
+            <a class="btn btn-ghost" href="pages/shop.html">View all teas</a>
+          </div>
+          <div class="product-grid" id="featured"></div>
+        </div>
+      </section>
+
+      <section class="section section-sage" aria-labelledby="catTitle">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Collections</span>
+              <h2 id="catTitle">Shop by style</h2>
+            </div>
+            <a class="btn btn-ghost" href="pages/categories.html"
+              >All collections</a
+            >
+          </div>
+          <div class="row g-3" data-render="categories"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="storyTitle">
+        <div class="container">
+          <div class="story-split">
+            <div
+              class="story-img reveal"
+              data-photo="storyA"
+              role="img"
+              aria-label="Loose leaf teas on silver spoons"
+            ></div>
+            <div class="reveal">
+              <span class="eyebrow">Our story</span>
+              <h2 id="storyTitle">From garden to kitchen</h2>
+              <p class="lead-sm mb-3">
+                We buy from small gardens in Japan, China, India and Kashmir,
+                taste every lot ourselves, and pack in small batches so the leaf
+                arrives as fresh as possible.
+              </p>
+              <p class="lead-sm mb-4">
+                Our masala chai is built around the spice mix we grew up with in
+                Peshawar: cardamom, cinnamon, clove and ginger over strong black
+                tea.
+              </p>
+              <a class="btn btn-forest" href="pages/our-story.html"
+                >Read our story</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pt-0">
+        <div class="container">
+          <div
+            class="offer reveal"
+            data-photo="offer"
+            data-photo-mode="overlay"
+          >
+            <div class="row align-items-center g-3">
+              <div class="col-md-8">
+                <span class="eyebrow" style="color: var(--gold)">Seasonal</span>
+                <h2>Autumn chai season</h2>
+                <p class="mb-0 fs-5">
+                  Free shipping on orders over $40, plus a free sample of
+                  Saffron Cardamom Chai with your first order.
+                </p>
+              </div>
+              <div class="col-md-4 text-md-end">
+                <a class="btn btn-gold btn-lg" href="pages/shop.html?cat=chai"
+                  >Shop chai</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pt-0" aria-labelledby="learnTitle">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Learn</span>
+              <h2 id="learnTitle">Learn your way around tea</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 reveal">
+              <div class="learn-card">
+                <div
+                  class="learn-img"
+                  data-photo="finder"
+                  role="img"
+                  aria-label="Loose leaf teas"
+                ></div>
+                <div class="learn-body">
+                  <h3>Tea Finder</h3>
+                  <p>
+                    Answer four questions and get three teas matched to your
+                    taste.
+                  </p>
+                  <a class="btn btn-forest" href="pages/tea-finder.html"
+                    >Take the quiz</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 reveal" style="--d: 1">
+              <div class="learn-card">
+                <div
+                  class="learn-img"
+                  data-photo="brew"
+                  role="img"
+                  aria-label="Tea being poured over a teapot"
+                ></div>
+                <div class="learn-body">
+                  <h3>Brewing guide</h3>
+                  <p>
+                    Water temperature, steep time and a built-in timer for every
+                    tea.
+                  </p>
+                  <a class="btn btn-forest" href="pages/brewing-guide.html"
+                    >Brew a cup</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 reveal" style="--d: 2">
+              <div class="learn-card">
+                <div
+                  class="learn-img"
+                  data-photo="about"
+                  role="img"
+                  aria-label="Tea in a bowl among leaves"
+                ></div>
+                <div class="learn-body">
+                  <h3>Our story</h3>
+                  <p>
+                    Meet the gardens we buy from and how each tea reaches you.
+                  </p>
+                  <a class="btn btn-forest" href="pages/our-story.html"
+                    >Read more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pt-0">
+        <div class="container">
+          <div
+            class="news-box reveal"
+            data-photo="newsletter"
+            data-photo-mode="overlay"
+          >
+            <span class="eyebrow" style="color: var(--gold)">Newsletter</span>
+            <h2>Get 10% off your first order</h2>
+            <p class="lead-sm mx-auto">
+              Join the list for new blends and brewing tips. Demo form: your
+              email is saved only in this browser.
+            </p>
+            <form
+              data-newsletter
+              class="d-flex gap-2 mx-auto"
+              style="max-width: 460px"
+              novalidate
+            >
+              <label class="visually-hidden" for="hNews">Email address</label
+              ><input
+                id="hNews"
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+                autocomplete="email"
+                required
+              /><button class="btn btn-gold">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer">
+      <noscript
+        ><p class="noscript-links">
+          <a href="pages/our-story.html">Our Story</a
+          ><a href="pages/contact.html">Contact</a
+          ><a href="pages/legal/privacy-policy.html">Privacy</a
+          ><a href="pages/legal/terms.html">Terms</a
+          ><a href="pages/legal/shipping-returns.html"
+            >Shipping &amp; returns</a
+          >
+        </p></noscript
+      >
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/data/categories.js"></script>
+    <script src="js/data/products.js"></script>
+    <script src="js/data/images.js"></script>
+    <script src="js/data/faqs.js"></script>
+    <script src="js/services/storage.js"></script>
+    <script src="js/services/product-service.js"></script>
+    <script src="js/services/cart-service.js"></script>
+    <script src="js/services/wishlist-service.js"></script>
+    <script src="js/components/toast.js"></script>
+    <script src="js/components/product-card.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/cart-drawer.js"></script>
+    <script src="js/components/search-modal.js"></script>
+    <script src="js/components/modal.js"></script>
+    <script src="js/features/product-search.js"></script>
+    <script src="js/features/product-filters.js"></script>
+    <script src="js/features/product-sorting.js"></script>
+    <script src="js/features/product-gallery.js"></script>
+    <script src="js/features/quantity-selector.js"></script>
+    <script src="js/features/tea-finder.js"></script>
+    <script src="js/features/newsletter.js"></script>
+    <script src="js/features/form-validation.js"></script>
+    <script src="js/animations/scroll-reveal.js"></script>
+    <script src="js/pages/home.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

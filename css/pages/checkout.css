@@ -1,0 +1,3 @@
+.pay-opt{border:1.5px solid var(--line);border-radius:var(--r-sm);padding:.8rem 1rem;display:flex;gap:.7rem;align-items:center;cursor:pointer}
+.pay-opt:has(input:checked){border-color:var(--gold);background:rgba(197,166,106,.14)}
+.success{text-align:center;padding:4rem 1rem}

@@ -1,0 +1,15 @@
+/* Restrained surfaces: solid ivory with a hairline border. Blur is used only on the header and overlays. */
+.glass{background:var(--glass);border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.glass-dark{background:var(--forest);border:1px solid rgba(255,255,255,.12);color:var(--ivory)}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(11,36,25,.45);opacity:0;pointer-events:none;transition:opacity var(--t-ui) var(--ease);z-index:1040}
+.drawer-backdrop.open{opacity:1;pointer-events:auto}
+.cart-drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);z-index:1050;display:flex;flex-direction:column;border-radius:0;border-width:0 0 0 1px;transform:translateX(100%);visibility:hidden;transition:transform var(--t-ui) var(--ease),visibility 0s linear var(--t-ui)}
+.cart-drawer.open{transform:none;visibility:visible;transition:transform var(--t-ui) var(--ease)}
+.cart-drawer .body{flex:1;overflow:auto;padding:0 1.4rem}
+.cart-drawer header,.cart-drawer footer{padding:1.2rem 1.4rem}
+.cart-drawer header{border-bottom:1px solid var(--line)}
+.cart-drawer footer:not(:empty){border-top:1px solid var(--line)}
+.search-overlay{position:fixed;inset:0;z-index:1060;background:rgba(11,36,25,.5);backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:opacity var(--t-ui) var(--ease),visibility 0s linear var(--t-ui);padding:12vh 1rem 1rem}
+.search-overlay.open{opacity:1;visibility:visible;transition:opacity var(--t-ui) var(--ease)}
+.search-box{max-width:640px;margin:auto;border-radius:var(--r-lg);padding:1.2rem}
+.modal-content.glass{border-radius:var(--r-lg);overflow:hidden}

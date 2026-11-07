@@ -1,0 +1,12 @@
+body{font-family:var(--font-body);line-height:1.65;color:var(--ink);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.display{font-family:var(--font-display);color:var(--forest);line-height:1.1;letter-spacing:-.02em;font-weight:500}
+h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:400}
+h2{font-size:clamp(1.9rem,3.6vw,2.8rem)}
+h3{font-size:1.25rem}
+.eyebrow{display:block;margin-bottom:.8rem;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-2)}
+.lead-sm{max-width:56ch;color:var(--muted)}
+.price{font-weight:600;color:var(--forest)}
+.note{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.15rem .75rem;margin:0 .3rem .4rem 0;font-size:.85rem;color:var(--forest)}
+a{text-underline-offset:3px}
+/* Links inside running text must not rely on colour alone */
+p a:not([class]),.legal a,.small a,li a:not([class]),.demo-note a{text-decoration:underline}

@@ -1,0 +1,2 @@
+.summary{border-radius:var(--r-md);padding:1.5rem;position:sticky;top:calc(var(--header-h) + 20px)}
+.summary dl{display:grid;grid-template-columns:1fr auto;gap:.4rem}.summary dd{margin:0;text-align:right}

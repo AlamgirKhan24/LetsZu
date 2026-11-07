@@ -1,0 +1,26 @@
+/* Motion system
+   Tokens (variables.css): hover 220ms, UI 320ms, reveal 600ms, image 600ms, hero intro 800ms.
+   Only transform and opacity are animated. Loops exist only for loaders (spinner, image skeleton).
+   Hover movement is wrapped in (hover:hover) so touch screens never get stuck states. */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes settle{from{transform:scale(1.06)}to{transform:scale(1)}}
+@keyframes bump{40%{transform:scale(1.35)}}
+@keyframes toast-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes toast-out{to{opacity:0;transform:translateY(6px)}}
+@keyframes reveal{from{opacity:0;translate:0 24px}}
+
+.hero-in{animation:rise var(--t-intro) var(--ease) both;animation-delay:calc(120ms + var(--i,0)*110ms)}
+
+/* Scroll reveal.
+   Hidden only while html.reveal-ready exists, and that class is added by scroll-reveal.js itself,
+   so without JavaScript (or if it fails) everything stays visible.
+   Reveal uses a keyframe animation (not a transition) so it never fights an element's own hover transition.
+   `translate` is used instead of `transform` so a card's hover transform is untouched. */
+.reveal-ready .reveal:not(.in){opacity:0}
+.reveal.in{animation:reveal var(--t-reveal) var(--ease) backwards;animation-delay:calc(var(--d,0)*var(--stagger))}
+.reveal.in[data-instant]{animation:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal-ready .reveal:not(.in){opacity:1}
+}

@@ -1,0 +1,26 @@
+:root{
+  /* Brand palette */
+  --forest:#163D2B; --forest-2:#1f5039; --forest-dark:#0B2419; --ivory:#F7F3E9; --sage:#DCE5D5; --gold:#C5A66A; --ink:#20251F;
+  /* Derived */
+  --gold-2:#775c20;            /* gold for text on ivory (AA contrast) */
+  --cream:var(--ivory); --cream-2:#EDE7D6; --charcoal:var(--ink);
+  --muted:#5a6157; --line:rgba(22,61,43,.14); --surface:#fffdf8;
+  --glass:rgba(247,243,233,.94); --glass-dark:rgba(11,36,25,.7); --glass-line:var(--line);
+  /* Shape, depth */
+  --r-sm:8px; --r-md:14px; --r-lg:22px;
+  --shadow:0 18px 40px -24px rgba(11,36,25,.35); --shadow-sm:0 6px 18px -12px rgba(11,36,25,.3);
+  /* Type */
+  --font-display:'Fraunces',Georgia,serif; --font-body:'Figtree',system-ui,sans-serif;
+  /* Motion */
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --t-fast:220ms;      /* hover, press, colour changes: 180-280ms */
+  --t-ui:320ms;        /* drawers, menus, toasts, state changes: 250-400ms */
+  --t-reveal:600ms;    /* scroll reveals: 400-700ms */
+  --t-image:600ms;     /* image zoom and fades */
+  --t-intro:800ms;     /* hero entrance only */
+  --stagger:70ms;
+  --header-h:72px;
+  /* Bootstrap bridge */
+  --bs-primary:#163D2B; --bs-primary-rgb:22,61,43; --bs-body-bg:#F7F3E9; --bs-body-color:#20251F;
+  --bs-body-font-family:'Figtree',system-ui,sans-serif; --bs-link-color:#163D2B; --bs-link-hover-color:#775c20; --bs-link-color-rgb:22,61,43; --bs-link-hover-color-rgb:119,92,32;
+}
